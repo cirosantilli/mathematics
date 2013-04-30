@@ -2,9 +2,9 @@ template to start a new latex project.
 
 you could use as:
 
-    new_project_name=""
-    this_repo_url=""
-    new_repo_url=""
+    new_project_name="" #ex: calculus
+    this_repo_url=""    #ex: git://github.com/cirosantilli/latex-template.git 
+    new_repo_url=""     #ex: git://github.com/$your_username/$new_project_name.git
 
     git clone "$this_repo_url" "$new_project_name"
     cd "$new_project_name"
