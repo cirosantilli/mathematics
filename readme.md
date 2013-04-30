@@ -1,43 +1,19 @@
 template to start a new latex project.
 
-from bash and github you could use this as:
+to fully automate usage process install the following script:
 
-    # create new latex project
-    #
-    # - clones the latex template
-    # - creates a new repo on github
-    #
-    # ubuntu install dependencies:
-    #
-    # - sudo aptitude install curl
-    # - sudo aptitude install moreutils
-    #
-    function gclt   #Git Clone Latex Template
-    {
-        NEW_REPO_NAME="$1"                                                  #ex: calculus
-        USERNAME=cirosantilli                                               #replace cirosantilli by your username!
-        NEW_REPO_URL="git@github.com:$USERNAME/$NEW_REPO_NAME.git"  
-        SHARED_REPO_URL="git://github.com/cirosantilli/latex-template.git" 
+    #a dir in your path
+    INPATH=~/bin/
+    #INPATH=/usr/local/bin/
 
-        git clone "$SHARED_REPO_URL" "$NEW_REPO_NAME"
-        cd "$NEW_REPO_NAME"
-        git submodule init
-        git submodule update
+    wget -O "$INPATH"latex-new-github-project.sh https://raw.github.com/cirosantilli/bash/33021849215861f93a7e52a0f43bd61d0ec9c267/bin/latex-new-github-project.sh
+    chmod +x latex-new-github-project.sh
 
-        DESCRIPTION="`echo -e "\n#enter repo description\n#only first line will be considered" | vipe | head -n1 | perl -pe "chomp"`"
-        curl -u "$USERNAME" https://api.github.com/user/repos -d '{
-            "name": "'$NEW_REPO_NAME'",
-            "description": "'$DESCRIPTION'"
-        }'
+and use as:
 
-        git remote rm origin
-        git remote add origin "$NEW_REPO_URL"
-        git push -u origin master
-    }
-
-    gclt calculus
+    latex-new-github-project.sh username reponame
 
 which would:
 
 - create a calculus repo locally
-- a github calculus repo all at once.
+- a github calculus repo all at once
