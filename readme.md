@@ -8,7 +8,3 @@ this contains submodules, so after clone you need:
     git submodule update
 
 to get the submodules.
-
-this also depends on the sty files contained in:
-
-- https://github.com/cirosantilli/latex-shared-sty/tree/1.0
