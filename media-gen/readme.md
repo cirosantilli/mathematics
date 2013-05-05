@@ -25,33 +25,47 @@ each plugin will be called a *media-gen plugin*
 
 the generation process is automated by a `makefile` in the current dir
 
-## required interface
+## interface
 
-each *media-gen plugin* is simply a directory with the following interface:
+each *media-gen plugin* is simply:
 
-- if you `cd "$MEDIA_PLUGIN_DIR" && make && cd ..` this will generate all the media of the plugin
-    and place it in `./out/`
+- a git repository whose names stars with the prefix `media-gen-plugin-`, ex: `media-gen-plugin-matplotlib`
 
-therefore `out` is a reserved name and no media plugin may use it
+- the submodule will be put under: `./media-gen/$NAME/shared/`, where `$NAME` is an arbitrary name
+    ( but which should reflect what the plugin does for your own sanity...)
 
-**DO NOT PUT ANYTHING INSIDE `out` SINCE IT WILL BE DELETED BY `make clean`!!!**
+- it contains an executable script `./install.sh` which installs the plugin.
 
-## suggested interface
+    This script typically does things like:
+    
+    - creating symlinks
+    - copying files
+    to the right place.
 
-besides the required interface, your plugin will probably be more popular if you:
+    It should **not**
+    
+    - touch the git index with commands like `git add` or `git commit`.
+    - make changes outside of the plugin dir
 
-- write a makefile which  make files for which source changed reducing compilation time
+- if you `cd "./media-gen/$NAME/" && make && cd ..` after installation this will generate all the media of the plugin
+    and place it in `./media-gen/out/`
 
-- turn your media-plugin can be a submodule This way people will be able to
+    therefore `out` is a reserved name and no media plugin may use it
 
-    - update your plugin
-    - control the version of your plugin
-    - contribute more easily to it
-    - not get their repos dirty with tons of new files which are maintained locally
+    try to write a makefile which only makes files for which source changed reducing compilation time
 
-- give clear installation instructions on a `readme.md`,
-    possibly with an `install.sh` script that helps automate installation
+    it is not necessary nor useful to implemet `make clean`
+
+    **DO NOT PUT ANYTHING INSIDE `out` SINCE IT WILL BE DELETED BY `make clean`!!!**
+
+## uninstall
+
+to uninstall a plugin:
+
+- remove any submodules under its tree. Unfortunatelly, there is no currently convenient automatic way of doing this.
+
+- remove the entire dir.
 
 # known stable media-gen plugins
 
-- matplotlib: 
+- matplotlib: https://github.com/cirosantilli/media-gen-plugin-matplotlib
