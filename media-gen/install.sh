@@ -38,6 +38,7 @@ if [ $# -gt 0 ]; then
     fi
     shift
 else
+    echo "too few arguments" 1>&2
     usage
     exit 2
 fi
@@ -54,8 +55,16 @@ else
     fi
 fi
 
+#there must be no args left
+if [ $# -gt 0 ]; then
+    echo "too many arguments" 1>&2
+    usage
+    exit 2
+fi
+
 mkdir "$DIRNAME"
-cd "$DIRNAME"
-git submodule add https://github.com/cirosantilli/media-gen-plugin-matplotlib.git shared
-cd shared
+cd ..
+path=media-gen/"$DIRNAME"/shared
+git submodule add "$REPO_URL"  "$path"
+cd "$path"
 ./install.sh

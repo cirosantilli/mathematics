@@ -1,3 +1,6 @@
 [submodule "shared"]
 	path = shared
 	url = git@github.com:cirosantilli/latex-submodule.git
+[submodule "media-gen/matplotlib/shared"]
+	path = media-gen/matplotlib/shared
+	url = https://github.com/cirosantilli/media-gen-plugin-matplotlib.git
