@@ -82,27 +82,26 @@ if [ -d "$DIRNAME" ]; then
     exit 2
 fi
 
-cd ..
-
 SUBMODULE_PATH=media-gen/"$DIRNAME"/shared
 MSG="installation requires to create a submodule at path: $SUBMODULE_PATH
 continue? ([y]/n): "
 echo -n "$MSG"
 while true; do
-read yn
-    case $yn in
+read YN
+    case $YN in
         y )         break;;
-        '' ) yn=y;  break;;
+        '' ) YN=y;  break;;
         n )         break;;
-        * ) echo -n "$MSG";;
+        * ) ECHO -n "$MSG";;
     esac
 done
-if [ "$yn" = n ]; then
+if [ "$YN" = n ]; then
     echo "INSTALLATION CANCELLED"
     exit 1
 fi
 
 mkdir "$DIRNAME"
+cd ..
 git submodule add "$REPO_URL" "$SUBMODULE_PATH"
 cd "$SUBMODULE_PATH"
 ./install.sh
