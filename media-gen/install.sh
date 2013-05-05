@@ -62,7 +62,13 @@ if [ $# -gt 0 ]; then
     exit 2
 fi
 
-mkdir "$DIRNAME"
+if [ ! -d "$DIRNAME" ]
+    mkdir "$DIRNAME"
+else
+    echo "$DIRNAME already exists, please choose another name"
+    exit 2
+fi
+
 cd ..
 path=media-gen/"$DIRNAME"/shared
 git submodule add "$REPO_URL"  "$path"
