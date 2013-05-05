@@ -62,7 +62,7 @@ if [ $# -gt 0 ]; then
     exit 2
 fi
 
-if [ ! -d "$DIRNAME" ]
+if [ ! -d "$DIRNAME" ]; then
     mkdir "$DIRNAME"
 else
     echo "$DIRNAME already exists, please choose another name"
