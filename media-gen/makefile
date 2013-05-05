@@ -1,36 +1,15 @@
-#compiles all *.py files into *.svg files
+#runs all media-gen plugins
 
-#can mkdir and output that dir.
+.PHONY: all clean
 
-override CC 		:= python shared.py
-override FLAGS 		?=
-override ID 		?=
-override IN_EXT 	?= .py
-override OUT_EXT 	?= .png
-override IN_DIR 	?= in/
-override OUT_DIR 	?= out/
-override RUN_NOEXT 	?= a 			#basename without extension of file to view (with firefox, okular, etc.)
+override OUT_DIR	?= out/
+override ERASE_MSG	?= 'DONT PUT ANYTHING IMPORTANT IN THOSE DIRECTORIES SINCE `make clean` ERASES THEM!!!'
 
-ERASE_MSG := 'DONT PUT ANYTHING IMPORTANT IN THOSE DIRECTORIES SINCE `make clean` ERASES THEM!!!'
-
-.PHONY: all mkdir firefox okular clean
-
-INS 		:= $(wildcard $(IN_DIR)*$(IN_EXT))
-INS_NODIR 	:= $(notdir $(INS))
-OUTS_NODIR	:= $(patsubst %$(IN_EXT),%$(OUT_EXT),$(INS_NODIR))
-OUTS		:= $(addprefix $(OUT_DIR),$(OUTS_NODIR))
-
-all: mkdir $(OUTS)
-	@echo 'OUTPUT    FILES WERE BE PUT INTO: $(OUT_DIR)'
-	@echo $(ERASE_MSG)
-
-$(OUT_DIR)%$(OUT_EXT): $(IN_DIR)%$(IN_EXT) shared.py
-	$(CC) $< $(FLAGS) 
-
-mkdir:
+all:
 	mkdir -p $(OUT_DIR)
 	@echo "MADE DIRS: $(OUT_DIR)"
 	@echo $(ERASE_MSG)
+	@for d in *; do if [ -d "$$d" ] && [ ! "$$d" = out ]; then cd "$$d" && make && cd ..; fi; done
 
 clean:
 	rm -r "$(OUT_DIR)"

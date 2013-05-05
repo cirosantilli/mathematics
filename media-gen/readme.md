@@ -1,19 +1,39 @@
 this dir contains code that generates media such as images programtically
 and the output
 
+# in and out
+
+this dir **must not** contain media that is not generated programtically such as
+
+- photos
+- scans
+- figures for which maintainers do not own the source code.
+
+it may contain for example:
+
+- plots generated with `gnuplot` or `matplotlib`
+- figures generated with drawing programs such as `inkscape` or `gimp`
+
 the recommended method for programatic graph generation is `python matplotlib`
 
-this dir will **not** contain media that is not generated programtically
-such as photos or scans or figures for which maintainers do not own the source code.
+# media-gen plugin
 
-output figures will be put a `out` dir, which should be added to the figure search path.
+since there may be many different media generators, it would be impractical to ship them all
+on a single template, so a plugin architecture has been developed.
 
-# dependencies
+each plugin will be called a *media-gen plugin*
 
-this depends on `matplotlib` so you must get that working before anything.
+each *media-gen plugin* is simply a directory with the following interface:
 
-on Ubuntu:
+- if you `cd "$MEDIA_PLUGIN_DIR" && make && cd ..` this will generate all the media of the plugin
+    and place it in `./out/`
 
-    sudo aptutide install python-matplotlib
+therefore `out` is a reserved name and no media plugin may use it
 
-note that `pip` usually fails because it cannot get all dependencies.
+**DO NOT PUT ANYTHING INSIDE `out` SINCE IT WILL BE DELETED BY `make clean`!!!**
+
+the generating process is automated by a `makefile` in the current dir
+
+# known stable media-gen plugins
+
+- matplotlib: 
