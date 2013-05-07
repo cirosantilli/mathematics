@@ -1,13 +1,4 @@
 template to start a new latex project.
 
-# dependencies
-
-this contains submodules, so you should clone with the `--recursive` flag:
-
-    git clone --recursive <repourl>
-
-and if you forgot to use it you can:
-
-    git submodule update --init
-
-to get the submodules.
+this contains submodules. if you don't know how to clone a project with submodules see:
+https://github.com/cirosantilli/git-cheat/blob/1.0/tutorial.md#clone-a-repo-that-contains-a-submodule
