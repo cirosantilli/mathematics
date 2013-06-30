@@ -1,8 +1,12 @@
 template to start a new latex project.
 
-this repo contains submodules. See: [how to clone a project with submodules](
-https://github.com/cirosantilli/git-cheat/blob/1.0/tutorial.md#clone-a-repo-that-contains-a-submodule)
-if you don't know how to work with one of those.
+this repo contains submodules, therefore you should clone it as:
+
+    git clone --recursive https://github.com/cirosantilli/latex-template
+
+and if you forgot to use `--recursive` the first time you cloned you can afterwards do:
+
+    git submodule update --init
 
 # design goals
 
