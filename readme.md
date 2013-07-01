@@ -1,3 +1,3 @@
-Tutorials on mathematics.
+mathematics tutorials, cheats, course notes, exercises and books
 
-If subjects get large enough they may be moved to another repo.
+if subjects get large enough they may be moved to another repo
