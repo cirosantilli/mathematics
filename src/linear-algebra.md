@@ -1,7 +1,7 @@
 #sources
 
 - <http://www.math.usm.edu/lambers/mat610/sum10/>
-    
+
     error analysis of gauss elimination on lecture 5
 
 #solve linear systems
