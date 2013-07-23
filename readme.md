@@ -1,3 +1,5 @@
-mathematics tutorials, cheats, course notes, exercises and books
+Mathematics tutorials, cheats, course notes, exercises and books.
 
-if subjects get large enough they may be moved to another repo
+Compiled outputs at: <http://cirosantilli.uphero.com/math/>.
+
+If subjects get large enough they may be moved to another repo.

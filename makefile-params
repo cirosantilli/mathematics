@@ -1,2 +1,4 @@
-FTP_HOST :=
-FTP_USER :=
+FTP_HOST := cirosantilli.uphero.com
+FTP_USER := a8236295
+REMOTE_SUBDIR_PREF := public_html/
+PROJECT_NAME := math
