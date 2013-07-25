@@ -1,15 +1,18 @@
 This lists the most beautiful question in mathematics.
 
-Sources of beauty:
+What makes a problem beautiful:
 
-- simple to state and understand, but extremely hard to prove
+- simple to state and understand (pre-high school, high-shool, lower undergrad), but extremely hard to prove
 
 - surprising: we had intuitive reasons to believe something as possible or not,
-    but a theorem shatters that conviction and brings us on our knees
+    but a theorem shatters that conviction and brings us on our knees.
 
-- applications: make life easier and / or modeling some phenomena well
+- applications: make life easier and / or modeling some phenomena well.
 
 Problems are sorted into categories, appear on only one category.
+
+Problems that come from applications such as physics or compute science are acceptable
+as long as they have a strictly mathematical formulation.
 
 #foundations
 
