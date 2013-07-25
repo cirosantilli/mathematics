@@ -43,6 +43,14 @@ as long as they have a strictly mathematical formulation.
 
 #computer science
 
+Lots of best algorithm questions:
+
+- which is the best possible worst case time for such problem?
+
+- is there and algorithm which achieves that?
+
+Cool theorems and conjectures:
+
 - P vs NP
 
 - primality testing algorithms
@@ -52,6 +60,19 @@ as long as they have a strictly mathematical formulation.
 - [collatz 3n+1 conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture#cite_note-KurtzSimon-8)
 
     So simple to state, so hard to prove.
+
+- is there an $O(n^2)$ matrix multiplication algorithm? If not, how fast can we get?
+
+    This is pratically important because matrix mulitplications are done millions and millions of times
+    to approximate solutions to physical problems.
+
+    Naive school algorithm: $O(n^3)$.
+
+    First improvement: [1969 strassen](http://en.wikipedia.org/wiki/Strassen_algorithm). Easy to understand,
+    and better in practice for large enough matrices.
+
+    Current best: [1987 volker-strassen](http://en.wikipedia.org/wiki/Coppersmith%E2%80%93Winograd_algorithm).
+    More complicated and not yet useful on practical matrix sizes found on current problems.
 
 #algebra
 
@@ -63,6 +84,12 @@ as long as they have a strictly mathematical formulation.
 
     Why does it stop at 4?? There is a link to group theory! Surprise.
 
+#group theory
+
+- [classification of simple finite groups](http://en.wikipedia.org/wiki/Classification_of_finite_simple_groups)
+
+    How can so much complexity come out from so few rules? How can the proof be so long (thousands of papers)?? Surprise!!
+
 #number theory
 
 Some results are trivial to understand even for pre high school students.
@@ -72,12 +99,6 @@ Some results are trivial to understand even for pre high school students.
         <http://en.wikipedia.org/wiki/Prime_number_theorem>
 
     Stronger than the proof that there are infinitely many primes: also says how many (assymptotically).
-
-#group theory
-
-- [classification of simple finite groups](http://en.wikipedia.org/wiki/Classification_of_finite_simple_groups)
-
-    How can so much complexity come out from so few rules? How can the proof be so long (thousands of papers)?? Surprise!!
 
 ##arithmetic progression of primes
 
