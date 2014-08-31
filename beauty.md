@@ -1,13 +1,26 @@
-This lists the most beautiful question in mathematics.
+# Beauty
 
-Primary importance criteria:
+This lists the most beautiful questions in mathematics.
 
-- simple to state and understand (pre-high school, high-shool, lower undergrad), but extremely hard to prove
+We find it beautiful:
 
-- surprise: we had intuitive reasons to believe something as possible or not,
+-   simple to state and understand (pre-high school, high-school, lower undergrad),
+    but extremely hard to prove.
+
+-   surprise: we had intuitive reasons to believe something as possible or not,
     but a theorem shatters that conviction and brings us on our knees.
 
-- applications: make life easier and / or modeling some phenomena well.
+    General surprise themes include:
+
+    -   classification of potentially infinite sets like: simple finite groups, compact manifolds, etc.
+
+    -   problems that are more complicated in low dimensions than high like:
+        classification of complex manifolds, classification of regular polytopes.
+
+    -   unpredictable magic constants. Why is the lowest dimension for an exotic sphere 7?
+        Why is 4 the largest degree of an equation with explicit solution?
+
+-   applications: make life easier and / or modeling some phenomena well.
 
 Problems are sorted into categories and appear on only one category.
 
@@ -16,51 +29,94 @@ as long as they have a strictly mathematical formulation.
 
 They may also be put together with the application, in which case this should be made explicit.
 
-#sources
+## Sources
 
-- <https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics>
+General sources.
+
+-   <https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics>
 
     Large list of unsolved problems in mathematics ranged by category.
 
     Good place to look for cool open problems.
 
-- <http://www.mathpages.com/>
+-   <http://www.mathpages.com/>
 
-    Focus on the beauty of certain mathematical questions in rather precise and accesible way.
+    Focus on the beauty of certain mathematical questions in rather precise and accessible way.
 
-#foundations
+## Foundations
 
-##cantor diagonal argument
+### Cantor diagonal argument
 
 <http://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument>
 
-there are as many rationals as integers. Surprise!!
+There are as many rationals as integers.
 
 ---
 
 Prerequisite from now on: formal proof systems. A proof is a sequence of string manipulations.
 
-##godel incompleteness
+### Godel incompleteness
 
 <http://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems>
 
-For every reasonably powerful proof system, with any axiomns, there are theorems which cannot be proved. Surprise!!
+For every reasonably powerful proof system, with any axioms, there are theorems which cannot be proved. Surprise!!
 
-##continuum hypothesis
+### Continuum hypothesis
 
 <http://en.wikipedia.org/wiki/Continuum_hypothesis> is independent from ZFC!
 
 Proof via [forcing](#forcing).
 
-##forcing
+### Forcing
 
 <http://en.wikipedia.org/wiki/Forcing_%28mathematics%29>
 
 You can sometimes prove that a specific theorem cannot be proven in a system with given axioms.
 
-#algebra
+## Geometry
 
-- [albel-ruffini theorem](http://en.wikipedia.org/wiki/Abel%E2%80%93Ruffini_theorem)
+### Platonic solids
+
+### Classification of regular polytopes
+
+<http://en.wikipedia.org/wiki/Regular_polytope#Classification_and_description>
+
+Polytope is a general name for N dimensional object which generalize:
+
+- polygons,    the 2D case
+- polyhedrons, the 3D case
+- polychorons, the 4D case
+
+which are objects with planar faces and edges.
+
+Regular polytopes are those with regular facets and vertex figures (the figure you get when you slice off an edge). This implies that the faces and the vertexes look alike, and convexity.
+
+3D regular polyhedrons are super famous, have the name "Platonic solid", and have been known since antiquity. In particular, there are only 5 of them.
+
+This prompts us to classify and count them in all dimensions.
+
+The counts are:
+
+| Dimension | Count      |
+|-----------|------------|
+| 2         | $\infty$   |
+| 3         | 5          |
+| 4         | 6          |
+| >4        | 3          |
+
+The cool thing is that the 3 that exist in 5+ dimensions are all of one of the three families:
+
+- <http://en.wikipedia.org/wiki/Cross-polytope>
+- <http://en.wikipedia.org/wiki/Hypercube>
+- <http://en.wikipedia.org/wiki/Simplex>
+
+Those three cases also appear on low dimensions, which have some extra ones, which clearly suggests that low dimensions are more complicated in this case.
+
+Oh, the beauty of things that are more complicated in low (3, 4) dimensions and simple in higher ones.
+
+## Algebra
+
+-   [Abel-Ruffini theorem](http://en.wikipedia.org/wiki/Abel%E2%80%93Ruffini_theorem)
 
     There is no explicit equation for the solution of polynomial equations of degree larger than 4!
 
@@ -68,7 +124,7 @@ You can sometimes prove that a specific theorem cannot be proven in a system wit
 
     Why does it stop at 4?? There is a link to group theory! Surprise.
 
-#linear algebra
+## Linear algebra
 
 Lots of very important applications:
 
@@ -80,40 +136,42 @@ Lots of very important applications:
 - quantum mechanics. Measurements always give eigenvalues of the system.
 
 The cleverness of how to efficiently solve the problems is very beautiful,
-in special the decomposition startegies:
+in special the decomposition strategies:
 
-- LU: takes $O(n^3)$ to do, but once done solution of linear systems with the same matrix
+-   LU: takes $O(n^3)$ to do, but once done solution of linear systems with the same matrix
     can be achieved in $O(n^2)$ instead of the naive $O(n^3)$!
 
-- QR: solve min squares in TODO instead of TODO
+-   QR: solve min squares in TODO instead of TODO
 
-- SVD: TODO
+-   SVD: TODO
 
-#group theory
+## Group theory
 
 Prerequisites: definition of group, definition and meaning of a simple group.
 
-- [classification of simple finite groups](http://en.wikipedia.org/wiki/Classification_of_finite_simple_groups)
+### Classification of simple finite groups
 
-    How can so much complexity come out from so few rules? How can the proof be so long (thousands of papers)?? Surprise!!
+<http://en.wikipedia.org/wiki/Classification_of_finite_simple_groups>
 
-##applications to rubiks cube
+How can so much complexity come out from so few rules? How can the proof be so long (thousands of papers)?? Surprise!!
+
+### Applications to Rubik's cube
 
 <https://en.wikipedia.org/wiki/Optimal_solutions_for_Rubik%27s_Cube>
 
-#number theory
+## Number theory
 
 Some results are trivial to understand even for pre high school students.
 
-##prime number theorem
+### Prime number theorem
 
 <http://en.wikipedia.org/wiki/Prime_number_theorem>
 
-Stronger than the proof that there are infinitely many primes: also says how many (assymptotically).
+Stronger than the proof that there are infinitely many primes: also says how many (asymptotically).
 
-##arithmetic progression of primes
+### Arithmetic progression of primes
 
-There are several questions related to arithemetic progressions or primes.
+There are several questions related to arithmetic progressions or primes.
 
 An arithmetic progression is of type:
 
@@ -129,16 +187,16 @@ has:
 
 - $a = 4$
 - $b = 3$
-- $k = 3$ (total 3 numebers)
+- $k = 3$ (total 3 numbers)
 
 The following questions arise:
 
-- if $a$ is allowed to vary, are there progressions with $k$ arbritarily large? What about $k$ infinite?
+-   if $a$ is allowed to vary, are there progressions with $k$ arbitrarily large? What about $k$ infinite?
 
-    Answer in 2013 by Tao: yes for $k$ arbritarily large, no for infinite $k$.
+    Answer in 2013 by Tao: yes for $k$ arbitrarily large, no for infinite $k$.
 
-- if $a$ is fixed, are there infinitelly many sequences with fixed length $k$?
-    If there are infinitelly many, what is their assymptotic distribution?
+-   if $a$ is fixed, are there infinitely many sequences with fixed length $k$?
+    If there are infinitely many, what is their asymptotic distribution?
 
     The most simple and elegant case is $a = 2$, $k = 2$, and numbers in those sequences are called twin primes,
     ex: 39 and 41. As of 2013, both infinity and distribution questions are open.
@@ -146,19 +204,20 @@ The following questions arise:
     As of 2013, for $k = 2$, infinitely many exist for a ~= 5 million, and the bound is going down,
     so it may be that soon the bound reaches 2, and the infinity of twin primes is proven.
 
-##infinity of certain types of primes
+### Infinity of certain types of primes
 
-For the following types of primes numbers, are there infinitely manys, and if so what is their assymptotic distribution:
+For the following types of primes numbers, are there infinitely many,
+and if so what is their asymptotic distribution:
 
-- [Sophie Germain primes]([https://en.wikipedia.org/wiki/Sophie_Germain_prime)
+-   [Sophie Germain primes]([https://en.wikipedia.org/wiki/Sophie_Germain_prime)
 
     A prime $p$ such that $2p + 1$ is also a prime.
 
-- arithmetic progressions $a*x + b$ of primes with fixed length $k$,
+-   arithmetic progressions $a*x + b$ of primes with fixed length $k$,
     including the well known cases $a = 2, k = 2$ (twin primes)
     and $a = 2, k = 4$ (prime quadruplet).
 
-- [Mersenne primes](https://en.wikipedia.org/wiki/Mersenne_prime)
+-   [Mersenne primes](https://en.wikipedia.org/wiki/Mersenne_prime)
 
     A prime of the form $2^n - 1$.
 
@@ -166,11 +225,11 @@ For the following types of primes numbers, are there infinitely manys, and if so
 
     As of 2013, only 48 Mersenne primes were known, the largest 10 known primes being Mersenne primes.
 
-- [Fibonacci primes](https://en.wikipedia.org/wiki/Fibonacci_prime)
+-   [Fibonacci primes](https://en.wikipedia.org/wiki/Fibonacci_prime)
 
     A Fibonacci number that is also prime.
 
-##goldbach's conjecture
+### Goldbach's conjecture
 
 <http://en.wikipedia.org/wiki/Goldbach%27s_conjecture>
 
@@ -181,13 +240,13 @@ For example:
     10 = 5 + 5
     100 = 41 + 59 = 3 + 97
 
-Made in 1742, computationaly verified up to huge numbers, but no proof.
+Made in 1742, computationally verified up to huge numbers, but no proof.
 
 So immediate and simple to state, but so hard to prove!
 
-##guassian primes
+### Guassian primes
 
-A [gaussian integers](https://en.wikipedia.org/wiki/Gaussian_integer) is an integer of the form:
+A [Gaussian integers](https://en.wikipedia.org/wiki/Gaussian_integer) is an integer of the form:
 
 $a + b*i$
 
@@ -200,10 +259,10 @@ Over rings, it is possible to define an analogue of primes known as [prime eleme
 
 Considering the Gaussian primes, the following interesting problems are still open:
 
-- are there infinitely many Gaussian primes on a line of type $1 + (a*k)$ where $a \in Z$?
+-   are there infinitely many Gaussian primes on a line of type $1 + (a*k)$ where $a \in Z$?
     In particular, $a = 1$ is specially elegant as it is the symmetric diagonal.
 
-- [Gaussian moat problem](https://en.wikipedia.org/wiki/Gaussian_moat)
+-   [Gaussian moat problem](https://en.wikipedia.org/wiki/Gaussian_moat)
 
     Is there a sequence $S_i$ with $S_0 = 0$ and $\lim_{i \to \infty} \inf |S_i| = \infty$ for which each element
     of the sequence is a Gaussian prime, and $|S_{i+1} = S_i| < k$ for a given $k$?
@@ -213,7 +272,7 @@ Considering the Gaussian primes, the following interesting problems are still op
 
     It has been determined by computational search that for $k = 6$ that the origin is separated from infinity.
 
-###weak version
+#### Weak version
 
 Every odd number is a sum of 3 primes.
 
@@ -228,7 +287,7 @@ In 1997 Deshouillers et al proved that the Generalized Reimiann Hypotheis would 
 
 ---
 
-##waring problem
+### Waring problem
 
 <http://en.wikipedia.org/wiki/Waring%27s_problem>
 
@@ -253,44 +312,44 @@ $g(k) = 2k + [(3/2)k] - 2$
 
 but this is still open with very close existing results.
 
-Also check out the upper case $G$ variable mentioned on wikipedia.
+Also check out the upper case $G$ variable mentioned on Wikipedia.
 
-##lagrange four square theorem
+### Lagrange four square theorem
 
 Case `k = 2` of [warring's problem](#warring-problem).
 
-##pollock octahedral numberes
+### Pollock octahedral numberes
 
 <http://en.wikipedia.org/wiki/Pollock_octahedral_numbers_conjecture>
 
 Variant of [warring's problem](#warring-problem).
 
-- [Fermat's theorem on sums of two squares](http://en.wikipedia.org/wiki/Fermat%27s_theorem_on_sums_of_two_squares)
+-   [Fermat's theorem on sums of two squares](http://en.wikipedia.org/wiki/Fermat%27s_theorem_on_sums_of_two_squares)
 
     A prime is a sum of two squares iff it is 1 mod 4.
 
-- every integer is a sum of at most 5 primes.
+-   every integer is a sum of at most 5 primes.
 
     The first finite upper bound to the necessary number of primes
-    was by Schinirelmann in 1931, but was around 300,000!
+    was by Schnirelmann in 1931, but was around 300,000!
 
-- http://en.wikipedia.org/wiki/Diophantine_quintuple
+-   <http://en.wikipedia.org/wiki/Diophantine_quintuple>
 
-##fermat's last theorem
+### Fermat's last theorem
 
 <http://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem>
 
 So simple to state and so hard to prove.
 
-##collatz 3n+1 conjecture
+### Collatz 3n+1 conjecture
 
 <https://en.wikipedia.org/wiki/Collatz_conjecture#cite_note-KurtzSimon-8>
 
 So simple to state, so hard to prove.
 
-#analysis
+## Analysis
 
-##reimann series theorem
+### Reimann series theorem
 
 <http://en.wikipedia.org/wiki/Riemann_series_theorem>
 
@@ -298,7 +357,7 @@ A conditionally convergent series can be arranged to converge to anything!
 
 An absolutely convergent series cannot.
 
-##uniform convergence
+### Uniform convergence
 
 <https://en.wikipedia.org/wiki/Uniform_convergence#To_continuity>
 
@@ -313,50 +372,50 @@ Simple counter examples:
 If uniform convergence is used however, continuous functions converge to continuous functions.
 Uniform convergence can be seen as convergence under the sup norm.
 
-##lebesgue integral
+### Lebesgue integral
 
 Understand the failing points of the Reimann integral and those which the Lebesgue one allows to cover.
 
 Notable points:
 
-- construction of the $L^p$ spaces which are Banach spaces.
+-   construction of the $L^p$ spaces which are Banach spaces.
 
     Using similar
 
-- reversibility of the Fourier series in $L^2$
+-   reversibility of the Fourier series in $L^2$
 
-- construction of non measurable sets: cool pathological sets.
+-   construction of non measurable sets: cool pathological sets.
 
     Requires the Axiom of Choice.
 
     [Banach Tarski paradox](http://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox):
     it is possible to double a sphere if we are allowed to cut it into non measurable sets.
 
-#cantor function
+## Cantor function
 
 The [Cantor function](http://en.wikipedia.org/wiki/Cantor_function) is a function that is continuous, differentiable,
 increasing, non-constant, and the derivative is zero everywhere except at a set with length zero. 
 
-##cauchy integral formula
+### Cauchy integral formula
 
 <http://en.wikipedia.org/wiki/Cauchy%27s_integral_formula>
 
 Holomorphic functions are incredibly simple as their values
 are determined from the values on the border of a containing disk:
 
-##cauchy integral theorem
+### Cauchy integral theorem
 
 <http://en.wikipedia.org/wiki/Cauchy_integral_theorem>
 
 We can easily detect the number of poles inside any region of a holomorphic function.
 
-##gamma function
+### Gamma function
 
 The only convex function that extends `n!` to the entire positive real line.
 
 Also has an analytic continuation to the entire complex plane.
 
-##analytic continuations
+### Analytic continuations
 
 <http://en.wikipedia.org/wiki/Analytic_continuation>
 
@@ -367,75 +426,82 @@ well, why not just take its domain to complex values and go around that hole?
 
 Simple example of analytic continuation of ($1/(1-z)$): <http://www.mathpages.com/home/kmath649/kmath649.htm>
 
-##reimann hypothesis
+### Reimann hypothesis
 
-Prerequisite: analytic contination.
+Prerequisite: analytic continuation.
 
 Start with a simple function: sum 1/n^s.
 
-Do an analysic continuation.
+Do an analytic continuation.
 
-Poof: we have an utra hard question: where are all the zeroes, in special the non trivial ones?
+Poof: we have an ultra hard question: where are all the zeroes, in special the non trivial ones?
 
 Simple to state, hard to prove.
 
 And as a bonus this has tons of implications to number theory.
 
-#differential geometry and topology
+## Differential geometry and topology
 
 Prerequisite: calculus and manifold basics.
 
-- [classification of compact 2-manifolds](http://www.proofwiki.org/wiki/Classification_of_Compact_Two-Manifolds)
+### Classification of compact 2-manifolds
 
-    So simple!! Either put handles on 2 holes or glue a mobius strip in a single hole.
+<http://www.proofwiki.org/wiki/Classification_of_Compact_Two-Manifolds>
 
-    Yes, you can glue a mobious strip into a single hole in dimension larger than 3! And it gives you a klein bottle!
+So simple!! Either put handles on 2 holes or glue a Mobius strip in a single hole.
 
-##generalized poincare conjectures
+You can glue a Mobius strip into a single hole in dimension larger than 3! And it gives you a Klein bottle!
+
+### Classification of compact 3-manifolds
+
+### Generalized Poincare conjectures
 
 <http://en.wikipedia.org/wiki/Generalized_Poincar%C3%A9_conjecture>
 
 There are two cases:
 
-- (topolocial) manifolds
+- (topological) manifolds
 - differential manifolds
 
-Questiona: are all compact manifolds / differential manifolds homotopic / diffeomorphic
+Questions: are all compact manifolds / differential manifolds homotopic / diffeomorphic
 to the sphere in that dimension?
 
-- for topological manifolds:
+-   for topological manifolds:
 
-    [poincare conjecture](https://en.wikipedia.org/wiki/Poincar%C3%A9_conjecture)
+    [Poincare conjecture](https://en.wikipedia.org/wiki/Poincar%C3%A9_conjecture)
 
-    Original problem posed, n = 3 for topological manifolds.
+    Original problem posed, $n = 3$ for topological manifolds.
 
-    2003 millenium prize problem.
+    2003 millennium prize problem.
 
     Last to be proven, only the 4-differential manifold case missing as of 2013.
 
-    Even the truth for all n > 4 was proven in the 60's!
+    Even the truth for all $n > 4$ was proven in the 60's!
 
     Why is low dimension harder than high dimension?? Surprise!
 
-    aka: classification of comact 3-manifolds. Even simpler than compact 2-manifolds: there is only one,
+    AKA: classification of compact 3-manifolds. Even simpler than compact 2-manifolds: there is only one,
     and it is equal to the 3-sphere.
 
-- for differential manifolds:
+-   for differential manifolds:
 
-    Not true in general. First counter example is n = 7.
+    Not true in general. First counter example is $n = 7$. Surprise: what is special about the number 7!?
 
-    Counter examles are called [exotic spheres](http://en.wikipedia.org/wiki/Generalized_Poincar%C3%A9_conjecture)
+    Counter examples are called [exotic spheres](http://en.wikipedia.org/wiki/Generalized_Poincar%C3%A9_conjecture)
 
-    [See this table](http://en.wikipedia.org/wiki/Differential_structure#Differential_structures_on_spheres_of_dimension_from_1_to_20).
+    Totally unpredictable count table:
 
-    n = 4 is open, there could even be infinitely many.
+    | Dimension    | 1 | 2 | 3 | 4 | 5 | 6 | 7  | 8 | 9 | 10 | 11  | 12 | 13 | 14 | 15    | 16 | 17 | 18 | 19     | 20 |
+    | Smooth types | 1 | 1 | 1 | ? | 1 | 1 | 28 | 2 | 8 | 6  | 992 | 1  | 3  | 2  | 16256 | 2  | 16 | 16 | 523264 | 24 |
+
+    $n = 4$ is open, there could even be infinitely many.
     Again, why are things more complicated in lower dimensions??
 
-##sources
+### Sources
 
 - <http://mathcs.org/analysis/reals/index.html>
 
-#game theory
+## Game theory
 
 In a game of chess, if both player play perfectly, does the first player always win?
 Always loses? Always draws? Open as of 2013.
@@ -453,23 +519,23 @@ do the best computers today beat the best humans?
 
 List of solved games: <https://en.wikipedia.org/wiki/Solved_game>
 
-##unsolved
+### Unsolved
 
-###go
+#### Go
 
 2013
 
 Humans win.
 
-###chess
+#### Chess
 
 2013
 
 Humans tie.
 
-##solved
+### Solved
 
-###tic tac toe
+#### Tic tac toe
 
 Draw.
 
@@ -477,7 +543,7 @@ Good programming exercise!
 
 tic tac toe is an specific instance of an m-n-k game.
 
-###m n k game
+#### m n k game
 
 Generalizes tic tac toe and simple gomoku: <https://en.wikipedia.org/wiki/M,n,k-game>
 
@@ -485,27 +551,27 @@ Second player cannot win with perfect play.
 
 Many win / lose results exist in function of m, n and k.
 
-###connect four
+#### Connect four
 
 First player forces win in at most 41 moves.
 
-##non perfect information
+### Non perfect information
 
 - TODO poker? other card games. Could not find.
 
-#physics
+## Physics
 
 Light is quantized.
 
 Superconductivity. A completely different level of conductivity,
 caused by a super hard to predict electron coupling effect.
 
-##newtonian gravitation
+### Newtonian gravitation
 
 An elephant and a piece of paper fall at the same speed without air.
 13 year olds don't know that!
 
-##atom
+### Atom
 
 Electron charge is quantized.
 
@@ -513,7 +579,7 @@ Atoms exist.
 
 There are neutrons and protons.
 
-##quantum mechanics
+### Quantum mechanics
 
 Unbelievably counter intuitive but precise and practically useful measurements!
 
@@ -530,7 +596,7 @@ Covalent bonds, etc.
 With statistical physics, explains semiconductors!
 Learn about the [energy bands](http://en.wikipedia.org/wiki/Electronic_band_structure).
 
-##relativity
+### Relativity
 
 Counter intuitive.
 
@@ -538,26 +604,28 @@ It is impossible to go faster than light.
 
 Special:
 
-- Matter can be converted into energy and vice versa.
+-   Matter can be converted into energy and vice versa.
 
     Applications to nuclear reactions.
 
-- GPS
+-   GPS
 
 General:
 
-- explain gravity
-- black holes.
+-   explain gravity
 
-    Not even light that goes in a certain radious cannot come out.
+-   black holes.
+
+    Not even light that goes in a certain radius cannot come out.
 
     In 1974, Hawkins showed that the black hole does emit some radiation because
     of quantum field theory effects.
 
-- neutron stars
-- cosmic background radiation
+-   neutron stars
 
-##standard model
+-   cosmic background radiation
+
+### Standard model
 
 There are 4 types of forces:
 
