@@ -106,13 +106,21 @@ The counts are:
 
 The cool thing is that the 3 that exist in 5+ dimensions are all of one of the three families:
 
-- <http://en.wikipedia.org/wiki/Cross-polytope>
-- <http://en.wikipedia.org/wiki/Hypercube>
-- <http://en.wikipedia.org/wiki/Simplex>
+- <http://en.wikipedia.org/wiki/Simplex>: triangle, tetrahedron: take D + 1 vertices that are not on a single D-plane, take convex hull.
+- <http://en.wikipedia.org/wiki/Hypercube>: square, cube. 4D case known as tesseract.
+- <http://en.wikipedia.org/wiki/Cross-polytope>: square, octahedron.
 
-Those three cases also appear on low dimensions, which have some extra ones, which clearly suggests that low dimensions are more complicated in this case.
+the cross polytope and hypercube being dual.
+
+Those three cases also appear on low dimensions (although in $D=2$ the hypercube and cross-polytope conincide), which have some extra ones, which clearly suggests that low dimensions are more complicated in this case.
 
 Oh, the beauty of things that are more complicated in low (3, 4) dimensions and simple in higher ones.
+
+### Schlegel diagram
+
+Visualize N dimensional polytopes in dimension N-1. In particular very useful to visualize 4D objects.
+
+<http://en.wikipedia.org/wiki/Schlegel_diagram>
 
 ## Algebra
 
