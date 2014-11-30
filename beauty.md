@@ -221,6 +221,12 @@ Some results are trivial to understand even for pre high school students.
 
 There are tons beautiful prime results and open questions.
 
+#### Eulers' formula for Primes and the Reimann Zeta function
+
+<https://en.wikipedia.org/wiki/Proof_of_the_Euler_product_formula_for_the_Riemann_zeta_function>
+
+Easy to understand the proof: cool to see how sieving naturally appears on the conversion algorithm.
+
 #### Prime number theorem
 
 <http://en.wikipedia.org/wiki/Prime_number_theorem>
@@ -329,14 +335,6 @@ and if so what is their asymptotic distribution:
     including the well known cases $a = 2, k = 2$ (twin primes)
     and $a = 2, k = 4$ (prime quadruplet).
 
--   [Mersenne primes](https://en.wikipedia.org/wiki/Mersenne_prime)
-
-    A prime of the form $2^n - 1$.
-
-    If $n$ is composite then $2^n - 1$ is also composite.
-
-    As of 2013, only 48 Mersenne primes were known, the largest 10 known primes being Mersenne primes.
-
 -   [Fibonacci primes](https://en.wikipedia.org/wiki/Fibonacci_prime)
 
     A Fibonacci number that is also prime.
@@ -344,6 +342,21 @@ and if so what is their asymptotic distribution:
 -   [Friedlander–Iwaniec](https://en.wikipedia.org/wiki/Friedlander%E2%80%93Iwaniec_theorem)
 
     Primes of type: $a^2 + b^4$. Proved in 1997.
+
+##### Mersenne primes
+
+<https://en.wikipedia.org/wiki/Mersenne_prime>
+
+A prime of the form $2^n - 1$.
+
+If $n$ is composite then $2^n - 1$ is also composite.
+
+As of 2013, only 48 Mersenne primes were known, the largest 10 known primes being Mersenne primes.
+
+Infinity is and distribution are open but conjectured to be true:
+<http://en.wikipedia.org/wiki/Mersenne_conjectures#Lenstra.E2.80.93Pomerance.E2.80.93Wagstaff_conjecture>
+
+Only 48 Mersenne primes are known in 13, amongst them the largest known prime.
 
 #### Landau's problems
 
@@ -443,6 +456,20 @@ $g(k) = 2k + [(3/2)k] - 2$
 but this is still open with very close existing results.
 
 Also check out the upper case $G$ variable mentioned on Wikipedia.
+
+### Perfect numbers
+
+<http://en.wikipedia.org/wiki/Perfect_number>
+
+Infinity: open.
+
+Can be generated from Mersenne primes, but infinity is unknown for them.
+
+Is there an odd perfect number? Open.
+
+### Harmonic divisor number
+
+<http://en.wikipedia.org/wiki/Harmonic_divisor_number>
 
 ### Lagrange four square theorem
 
@@ -545,26 +572,28 @@ it is possible to double a sphere if we are allowed to cut it into non measurabl
 The [Cantor function](http://en.wikipedia.org/wiki/Cantor_function) is a function that is continuous, differentiable,
 increasing, non-constant, and the derivative is zero everywhere except at a set with length zero. 
 
-### Cauchy integral formula
-
-<http://en.wikipedia.org/wiki/Cauchy%27s_integral_formula>
-
-Holomorphic functions are incredibly simple as their values
-are determined from the values on the border of a containing disk.
-
-### Cauchy integral theorem
-
-<http://en.wikipedia.org/wiki/Cauchy_integral_theorem>
-
-We can easily detect the number of poles inside any region of a holomorphic function.
-
 ### Gamma function
 
 The only convex function that extends `n!` to the entire positive real line.
 
 Also has an analytic continuation to the entire complex plane.
 
-### Analytic continuations
+### Complex analysis
+
+#### Cauchy integral formula
+
+<http://en.wikipedia.org/wiki/Cauchy%27s_integral_formula>
+
+Holomorphic functions are incredibly simple as their values
+are determined from the values on the border of a containing disk.
+
+#### Cauchy integral theorem
+
+<http://en.wikipedia.org/wiki/Cauchy_integral_theorem>
+
+We can easily detect the number of poles inside any region of a holomorphic function.
+
+#### Analytic continuations
 
 <http://en.wikipedia.org/wiki/Analytic_continuation>
 
@@ -574,6 +603,8 @@ Basic idea: a real function given by a power series explodes at some point, so I
 well, why not just take its domain to complex values and go around that hole?
 
 Simple example of analytic continuation of $1/(1-z)$: <http://www.mathpages.com/home/kmath649/kmath649.htm>
+
+### Reimann Zeta function
 
 ### Reimann hypothesis
 
@@ -588,6 +619,12 @@ Poof: we have an ultra hard question: where are all the zeroes, in special the n
 Simple to state, hard to prove.
 
 And as a bonus this has tons of implications to number theory.
+
+### BBP formula
+
+<https://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula>
+
+Calculate the Nth digit of many summation constants, including pi, without calculating the preceding digits.
 
 ## Differential geometry and topology
 
@@ -651,142 +688,3 @@ to the sphere in that dimension?
 ### Sources
 
 - <http://mathcs.org/analysis/reals/index.html>
-
-## Game theory
-
-In a game of chess, if both player play perfectly, does the first player always win?
-Always loses? Always draws? Open as of 2013.
-
-Is there a polynomial algorithm that allows to chose the next perfect move?
-Or is brute force necessary (almost never polynomial for interesting games).
-
-Some games have been weakly solved: it have been proven that one player always wins / loses,
-bit the actual strategy is unknown.
-
-Generalization for non perfect information games: strategy that leads to greatest expected outcome.
-
-Non-mathematical question: if it is not polynomially decidable,
-do the best computers today beat the best humans?
-
-List of solved games: <https://en.wikipedia.org/wiki/Solved_game>
-
-### Unsolved
-
-#### Go
-
-2013
-
-Humans win.
-
-#### Chess
-
-2013
-
-Humans tie.
-
-### Solved
-
-#### Tic tac toe
-
-Draw.
-
-Good programming exercise!
-
-tic tac toe is an specific instance of an m-n-k game.
-
-#### m n k game
-
-Generalizes tic tac toe and simple gomoku: <https://en.wikipedia.org/wiki/M,n,k-game>
-
-Second player cannot win with perfect play.
-
-Many win / lose results exist in function of m, n and k.
-
-#### Connect four
-
-First player forces win in at most 41 moves.
-
-### Non perfect information
-
-- TODO poker? other card games. Could not find.
-
-## Physics
-
-Light is quantized.
-
-Superconductivity. A completely different level of conductivity,
-caused by a super hard to predict electron coupling effect.
-
-### Newtonian gravitation
-
-An elephant and a piece of paper fall at the same speed without air.
-13 year olds don't know that!
-
-### Atom
-
-Electron charge is quantized.
-
-Atoms exist.
-
-There are neutrons and protons.
-
-### Quantum mechanics
-
-Unbelievably counter intuitive but precise and practically useful measurements!
-
-Matter behaves as waves. Throw one million electrons at a wall with double slit,
-and in the end you see an interference pattern!
-
-In certain systems energy is quantized!
-This explains the energy levels observed in atoms.
-
-Explains chemical bonds.
-How do atoms stick together to form molecules?
-Covalent bonds, etc.
-
-With statistical physics, explains semiconductors!
-Learn about the [energy bands](http://en.wikipedia.org/wiki/Electronic_band_structure).
-
-### Relativity
-
-Counter intuitive.
-
-It is impossible to go faster than light.
-
-Special:
-
--   Matter can be converted into energy and vice versa.
-
-    Applications to nuclear reactions.
-
--   GPS
-
-General:
-
--   explain gravity
-
--   black holes.
-
-    Not even light that goes in a certain radius cannot come out.
-
-    In 1974, Hawkins showed that the black hole does emit some radiation because
-    of quantum field theory effects.
-
--   neutron stars
-
--   cosmic background radiation
-
-### Standard model
-
-There are 4 types of forces:
-
-- strong
-- weak
-- electromagnetic
-- gravitational
-
-The standard model unifies strong, weak and electromagnetic into a single system.
-
-The standard model is a quantum field theory.
-
-Explains the spin of particles.
