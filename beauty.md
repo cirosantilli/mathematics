@@ -137,6 +137,49 @@ TODO: classification?
 
 Doubly ruled surfaces have 2 lines through every point, e.g. hyperboloid.
 
+### Compass and straightedge construction
+
+<http://en.wikipedia.org/wiki/Compass-and-straightedge_construction>
+
+Famous type of geometric constructions using only two operations:
+
+- draw an infinite line through two known points
+- draw a circle through two known points
+
+At the beginning, two known points are given.
+The distance between those points can be taken as the unit.
+
+The intersection of two different lines or circles becomes a new known point.
+
+Creating points at an arbitrary distance is not possible:
+that is why it is a straightedge, and not a ruler.
+If it were, it would be simple to built anything from its Cartesian coordinates.
+
+Many simple to understand constructions were proved impossible by Pierre Wantzel in 1837,
+by reduction to an algebraic problem: every length must fall in the constructible numbers,
+which is the quadratic closure of $Q$, and a subset of the algebraic numbers.
+
+The most famous are:
+
+-   <http://en.wikipedia.org/wiki/Doubling_the_cube>. Requires making a line with length $2^{1/3}$.
+
+-   angle trisection: <http://en.wikipedia.org/wiki/Angle_trisection>
+
+-   construction of certain regular polygons: <http://en.wikipedia.org/wiki/Constructible_polygon>
+
+    Gauss had proved the sufficiency in 1796: Wantzel proved the necessity of the same rules.
+
+In 1882 another famous one fell as $\pi$ was proven irrational:
+
+- <http://en.wikipedia.org/wiki/Squaring_the_circle>
+
+The problem can also be formulated more generally and algebraically as
+<http://en.wikipedia.org/wiki/Constructible_number>
+
+Those problems are notable for having people who claim to have solved the problem
+even after the mathematical proof has been known after 2 centuries.
+<http://web.mst.edu/~lmhall/WhatToDoWhenTrisectorComes.pdf>
+
 ### Minimal surface
 
 A surface such that if you modify it locally, it becomes wider.
@@ -349,6 +392,12 @@ and if so what is their asymptotic distribution:
 
 A prime of the form $2^n - 1$.
 
+
+#### Fermat's theorem on sums of two squares
+
+A prime is a sum of two squares iff it is $1 mod 4$.
+
+<http://en.wikipedia.org/wiki/Fermat%27s_theorem_on_sums_of_two_squares>
 If $n$ is composite then $2^n - 1$ is also composite.
 
 As of 2013, only 48 Mersenne primes were known, the largest 10 known primes being Mersenne primes.
@@ -356,7 +405,24 @@ As of 2013, only 48 Mersenne primes were known, the largest 10 known primes bein
 Infinity is and distribution are open but conjectured to be true:
 <http://en.wikipedia.org/wiki/Mersenne_conjectures#Lenstra.E2.80.93Pomerance.E2.80.93Wagstaff_conjecture>
 
-Only 48 Mersenne primes are known in 13, amongst them the largest known prime.
+Only 48 Mersenne primes are known in 2013, amongst them the largest known prime.
+
+##### Fermat primes
+
+Primes of the form $2^n + 1$.
+
+It is known that for those numbers to be prime $n = 2^m$ is necessary but not sufficient.
+
+This leads to the sequence:
+
+$$F_n = 2^{(2^n)} + 1$$
+
+Of which $n \in [0,5]$ are prime, and $n \in [6..32]$ were verified not to be prime as of 2014.
+
+It is conjectured that there are only finitely many Fermat primes, possibly only the first five.
+
+Fermat primes also related to <http://en.wikipedia.org/wiki/Constructible_polygon> as shown by Gauss in 1796.
+The non-obvious 17-gon construction it predicts is particularly famous.
 
 #### Landau's problems
 
@@ -379,9 +445,38 @@ Made in 1742, computationally verified up to huge numbers, but no proof.
 
 So immediate and simple to state, but so hard to prove!
 
-#### Guassian primes
+##### Weak version of Goldbach's conjecture
 
-A [Gaussian integers](https://en.wikipedia.org/wiki/Gaussian_integer) is an integer of the form:
+Every odd number is a sum of 3 primes.
+
+This is obviously implied by Goldbach's conjecture,
+since if you can generate any even number with two primes,
+then you can just add a third $+ 1$ to reach any odd number.
+
+As of 2013, a proof seems about to come out.
+
+Vinogradof proved in that every odd number larger than an unknown number G can be a sum of 3 primes,
+but did not bound G.
+
+Bounds on G started appearing in 1956, but are still too large to attack computationally as of 2013.
+
+In 1997 Deshouillers et al. proved that the Generalized Reimann Hypothesis would imply this.
+
+#### Waring–Goldbach problem
+
+<http://en.wikipedia.org/wiki/Waring%E2%80%93Goldbach_problem>
+
+Mixture of Goldbach's conjecture (sum of primes) with Warring's problem (sum of powers):
+
+$$N = p_1^k + p_2^k + ... + p_t^k$$
+
+where $t$ can be chosen as a function of $k$.
+
+Case $k=1$ with the extra requirement that $t=2$ reduces to Goldbach's conjecture.
+
+#### Gaussian primes
+
+A [Gaussian integers](https://en.wikipedia.org/wiki/Gaussian_integer) are integer of the form:
 
 $$a + b*i$$
 
@@ -407,18 +502,11 @@ Considering the Gaussian primes, the following interesting problems are still op
 
     It has been determined by computational search that for $k = 6$ that the origin is separated from infinity.
 
-##### Weak version
+#### Einstein primes
 
-Every odd number is a sum of 3 primes.
+<http://en.wikipedia.org/wiki/Eisenstein_integer>
 
-As of 2013, a proof seems about to come out.
-
-Vinogradof proved in that every odd number larger than an unknown number G can be a sum of 3 primes,
-but did not bound G.
-
-Bounds on G started appearing in 1956, but are still too large to attack computationally as of 2013.
-
-In 1997 Deshouillers et al proved that the Generalized Reimiann Hypotheis would imply this.
+Similar to Gaussian but on the third root of unity.
 
 #### Lucky numbers
 
@@ -430,21 +518,26 @@ Shares some properties with the primes.
 
 There is also an entire field of studies called <https://en.wikipedia.org/wiki/Sieve_theory> which studies more general sieves than the prime one.
 
-#### Waring problem
+### Waring's problem
 
 <http://en.wikipedia.org/wiki/Waring%27s_problem>
 
-For a given `k`:
+For a given $k$:
 
-- for a given `n`, is every natural a sum of at most `n` k-th powers?
-- for each `k`, what is the smallest value of `n`? Call that number `g(k)`.
+-   is there an $n$, such that every natural is a sum of at most $n$ $k$-th powers ($a_1^{k} + a_2^{k} + ... + a_n^{k}$)?
+
+-   if yes, what the smallest value of $n$? Call that number $g(k)$.
+
+-   the same question can be posed for $G(k)$, which is $g(k)$
+    but considering only numbers larger than a fixed arbitrary constant,
+    and is more elegant there
 
 There are also many variants such as using sums of primes, or other subsets of the integers.
 
 Other known values are:
 
-- $g(2) = 4$  in 1770 by Lagrange
-- $g(3) = 9$  in 1912 by Wieferich and A. J. Kempner,
+- $g(2) = 4$ in 1770 by Lagrange
+- $g(3) = 9$ in 1912 by Wieferich and A. J. Kempner,
 - $g(4) = 19$ in 1986 by R. Balasubramanian, F. Dress, and J.-M. Deshouillers
 - $g(5) = 37$ in 1964 by Chen Jingrun
 - $g(6) = 73$ in 1940 by Pillai.
@@ -453,9 +546,29 @@ It was conjectured in 1770 by Euler's son that
 
 $g(k) = 2k + [(3/2)k] - 2$
 
-but this is still open with very close existing results.
+This later proved to be false but did go in the right direction as it is a case of the proved formula.
 
-Also check out the upper case $G$ variable mentioned on Wikipedia.
+$G(k)$ is mostly still open. Obviously, $G(k) <= g(k)$. The only known values are:
+
+- $G(2) = 4 = g(2)$
+- $G(4) = 16 < g(4) = 19$
+
+For the others there are only bounds.
+
+#### Lagrange's four square theorem
+
+<http://en.wikipedia.org/wiki/Lagrange%27s_four-square_theorem>
+
+Case $k = 2$ of Warring's problem.
+
+Fermat's theorem on sums of two squares gives the result only for primes 1 mod 4:
+only 2 squares are need then.
+
+#### Fermat's theorem on sums of two squares
+
+A prime is a sum of two squares iff it is $1 mod 4$.
+
+<http://en.wikipedia.org/wiki/Fermat%27s_theorem_on_sums_of_two_squares>
 
 ### Perfect numbers
 
@@ -471,26 +584,16 @@ Is there an odd perfect number? Open.
 
 <http://en.wikipedia.org/wiki/Harmonic_divisor_number>
 
-### Lagrange four square theorem
-
-Case `k = 2` of Warring's problem.
-
 ### Pollock octahedral numbers
 
 <http://en.wikipedia.org/wiki/Pollock_octahedral_numbers_conjecture>
 
-Variant of Warring's problem.
-
--   [Fermat's theorem on sums of two squares](http://en.wikipedia.org/wiki/Fermat%27s_theorem_on_sums_of_two_squares)
-
-    A prime is a sum of two squares iff it is 1 mod 4.
+Variant of Warring's problem for octahedral numbers.
 
 -   every integer is a sum of at most 5 primes.
 
     The first finite upper bound to the necessary number of primes
     was by Schnirelmann in 1931, but was around 300,000!
-
--   <http://en.wikipedia.org/wiki/Diophantine_quintuple>
 
 ### Fermat's last theorem
 
