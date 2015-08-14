@@ -4,28 +4,23 @@ This lists the most beautiful questions in mathematics.
 
 We find it beautiful:
 
--   simple to state and understand (pre-high school, high-school, lower undergrad),
-    but extremely hard to prove.
+-   simple to state and understand (pre-high school, high-school, lower undergrad), but extremely hard to prove.
 
--   surprise: we had intuitive reasons to believe something as possible or not,
-    but a theorem shatters that conviction and brings us on our knees.
+-   surprise: we had intuitive reasons to believe something as possible or not, but a theorem shatters that conviction and brings us on our knees.
 
     General surprise themes include:
 
     -   classification of potentially infinite sets like: simple finite groups, compact manifolds, etc.
 
-    -   problems that are more complicated in low dimensions than high like:
-        classification of complex manifolds, classification of regular polytopes.
+    -   problems that are more complicated in low dimensions than high like: classification of complex manifolds, classification of regular polytopes.
 
-    -   unpredictable magic constants. Why is the lowest dimension for an exotic sphere 7?
-        Why is 4 the largest degree of an equation with explicit solution?
+    -   unpredictable magic constants. Why is the lowest dimension for an exotic sphere 7? Why is 4 the largest degree of an equation with explicit solution?
 
 -   applications: make life easier and / or modeling some phenomena well.
 
 Problems are sorted into categories and appear on only one category.
 
-Problems that come from applications such as physics or compute science are acceptable
-as long as they have a strictly mathematical formulation.
+Problems that come from applications such as physics or compute science are acceptable as long as they have a strictly mathematical formulation.
 
 They may also be put together with the application, in which case this should be made explicit.
 
@@ -91,7 +86,9 @@ which are objects with planar faces and edges.
 
 Regular polytopes are those with regular facets and vertex figures (the figure you get when you slice off an edge). This implies that the faces and the vertexes look alike, and convexity.
 
-3D regular polyhedrons are super famous, have the name "Platonic solid", and have been known since antiquity. In particular, there are only 5 of them.
+3D regular convex polyhedrons are super famous, have the name "Platonic solid", and have been known since antiquity. In particular, there are only 5 of them. Topological classification is super cool: <https://en.wikipedia.org/wiki/Platonic_solid#Topological_proof>
+
+There are only 4 non-convex regular polyhedrons: <https://en.wikipedia.org/wiki/Kepler%E2%80%93Poinsot_polyhedron>
 
 This prompts us to classify and count them in all dimensions.
 
@@ -106,15 +103,59 @@ The counts are:
 
 The cool thing is that the 3 that exist in 5+ dimensions are all of one of the three families:
 
-- <http://en.wikipedia.org/wiki/Simplex>: triangle, tetrahedron: take D + 1 vertices that are not on a single D-plane, take convex hull.
-- <http://en.wikipedia.org/wiki/Hypercube>: square, cube. 4D case known as tesseract.
-- <http://en.wikipedia.org/wiki/Cross-polytope>: square, octahedron.
+-   <http://en.wikipedia.org/wiki/Simplex>: triangle, tetrahedron.
+
+    Non-regular description: take convex hull take D + 1 vertices that are not on a single D-plane, 
+
+-   <http://en.wikipedia.org/wiki/Hypercube>: square, cube. 4D case known as tesseract.
+
+    Convex hull of all $(-1, 1)^D$ (Cartesian product power) D-tuples.
+
+    Two are linked iff they differ by a single number. So each vertex has D neighbors.
+
+-   <http://en.wikipedia.org/wiki/Cross-polytope>: square, octahedron.
+
+    All permutations of $(±1, 0, 0, …, 0)$
+
+    Each edge E is linked to every other edge, except it's opposite -E.
 
 the cross polytope and hypercube being dual.
 
-Those three cases also appear on low dimensions (although in $D=2$ the hypercube and cross-polytope conincide), which have some extra ones, which clearly suggests that low dimensions are more complicated in this case.
+Those three cases also appear on low dimensions (although in $D=2$ the hypercube and cross-polytope coincide), which have some extra ones, which clearly suggests that low dimensions are more complicated in this case.
 
 Oh, the beauty of things that are more complicated in low (3, 4) dimensions and simple in higher ones.
+
+Polytope notations:
+
+- <https://en.wikipedia.org/wiki/Schl%C3%A4fli_symbol>
+
+Other concepts:
+
+- <https://en.wikipedia.org/wiki/Regular_polyhedron>: TODO understand
+
+#### Archimedean solid
+
+<https://en.wikipedia.org/wiki/Archimedean_solid>
+
+Like platonic, but with 2 regular polygons + vertex transitivity.
+
+Classified.
+
+#### Johnson_solid
+
+Like Archimedean, but no vertex transitivity.
+
+<https://en.wikipedia.org/wiki/Johnson_solid>
+
+TODO why is J37, https://en.wikipedia.org/wiki/Elongated_square_gyrobicupola unique?
+
+Classified 3D 92 members, conjecture in 1966, proved in 1969.
+
+### Net of a polyhedron
+
+<https://en.wikipedia.org/wiki/Net_%28polyhedron%29>
+
+Not unique, existence unknown as of 2015.
 
 ### Euler characteristic
 
@@ -146,18 +187,13 @@ Famous type of geometric constructions using only two operations:
 - draw an infinite line through two known points
 - draw a circle through two known points
 
-At the beginning, two known points are given.
-The distance between those points can be taken as the unit.
+At the beginning, two known points are given. The distance between those points can be taken as the unit.
 
 The intersection of two different lines or circles becomes a new known point.
 
-Creating points at an arbitrary distance is not possible:
-that is why it is a straightedge, and not a ruler.
-If it were, it would be simple to built anything from its Cartesian coordinates.
+Creating points at an arbitrary distance is not possible: that is why it is a straightedge, and not a ruler. If it were, it would be simple to built anything from its Cartesian coordinates.
 
-Many simple to understand constructions were proved impossible by Pierre Wantzel in 1837,
-by reduction to an algebraic problem: every length must fall in the constructible numbers,
-which is the quadratic closure of $Q$, and a subset of the algebraic numbers.
+Many simple to understand constructions were proved impossible by Pierre Wantzel in 1837, by reduction to an algebraic problem: every length must fall in the constructible numbers, which is the quadratic closure of $Q$, and a subset of the algebraic numbers.
 
 The most famous are:
 
@@ -173,12 +209,9 @@ In 1882 another famous one fell as $\pi$ was proven irrational:
 
 - <http://en.wikipedia.org/wiki/Squaring_the_circle>
 
-The problem can also be formulated more generally and algebraically as
-<http://en.wikipedia.org/wiki/Constructible_number>
+The problem can also be formulated more generally and algebraically as <http://en.wikipedia.org/wiki/Constructible_number>
 
-Those problems are notable for having people who claim to have solved the problem
-even after the mathematical proof has been known after 2 centuries.
-<http://web.mst.edu/~lmhall/WhatToDoWhenTrisectorComes.pdf>
+Those problems are notable for having people who claim to have solved the problem even after the mathematical proof has been known after 2 centuries. <http://web.mst.edu/~lmhall/WhatToDoWhenTrisectorComes.pdf>
 
 ### Minimal surface
 
@@ -211,6 +244,46 @@ TODO: to see how this is remarkable, I need to
 - see other constants which are not intrinsic: give 2 embeddings where they differ
 - understand the precise definition of "ruler" and "protractor"
 
+### Polyomino
+
+<https://en.wikipedia.org/wiki/Polyomino>
+
+Interesting problems:
+
+- asymptotic counting
+- tiling the plane, <https://en.wikipedia.org/wiki/Conway_criterion> and its exceptions
+- Tetris!
+
+### Tiling the plane
+
+### Tessellation of the plane
+
+- <https://en.wikipedia.org/wiki/Tessellation>
+- Classification for regular polygons http://math.stackexchange.com/questions/347403/why-are-triangles-squares-and-hexagons-the-only-polygons-with-which-it-is-possi
+- <https://en.wikipedia.org/wiki/Wang_tile> is undecidable, proved by using it to encode Turing machines. 2M was offered from 2008 to 2010 for a finite version with fixed tiles but got not solution: <https://en.wikipedia.org/wiki/Eternity_II_puzzle>. Predecessor: <https://en.wikipedia.org/wiki/TetraVex>
+- <https://en.wikipedia.org/wiki/Penrose_tiling>
+- <https://en.wikipedia.org/wiki/Conway_criterion>
+- <https://en.wikipedia.org/wiki/Aperiodic_set_of_prototiles>
+
+#### By a single convex polygon
+
+Classification (don't need to meet at vertices):
+
+- 3 and 4: every one tiles
+- 5: unknown. 15th type discovered in 2015 by computer, 30 years after the previous one! <http://www.theguardian.com/science/alexs-adventures-in-numberland/2015/aug/10/attack-on-the-pentagon-results-in-discovery-of-new-mathematical-tile>
+- 6: 3
+- >7: none: <http://math.stackexchange.com/questions/91761/why-a-tesselation-of-the-plane-by-a-convex-polygon-of-7-or-more-sides-is-not-pos>
+
+### Wallpaper group and relations
+
+- https://en.wikipedia.org/wiki/Frieze_group
+- https://en.wikipedia.org/wiki/Wallpaper_group
+- https://en.wikipedia.org/wiki/Space_group
+
+### Non-Euclidean geometry
+
+- <https://en.wikipedia.org/wiki/Poincar%C3%A9_disk_model>, easy to understand
+
 ## Algebra
 
 -   [Abel-Ruffini theorem](http://en.wikipedia.org/wiki/Abel%E2%80%93Ruffini_theorem)
@@ -232,11 +305,9 @@ Lots of very important applications:
 
 - quantum mechanics. Measurements always give eigenvalues of the system.
 
-The cleverness of how to efficiently solve the problems is very beautiful,
-in special the decomposition strategies:
+The cleverness of how to efficiently solve the problems is very beautiful, in special the decomposition strategies:
 
--   LU: takes $O(n^3)$ to do, but once done solution of linear systems with the same matrix
-    can be achieved in $O(n^2)$ instead of the naive $O(n^3)$!
+-   LU: takes $O(n^3)$ to do, but once done solution of linear systems with the same matrix can be achieved in $O(n^2)$ instead of the naive $O(n^3)$!
 
 -   QR: solve min squares in TODO instead of TODO
 
@@ -256,6 +327,10 @@ How can so much complexity come out from so few rules? How can the proof be so l
 
 <https://en.wikipedia.org/wiki/Optimal_solutions_for_Rubik%27s_Cube>
 
+### Simple neat groups
+
+- <https://en.wikipedia.org/wiki/Dihedral_group#Definition>. There is also an infinite version <https://en.wikipedia.org/wiki/Infinite_dihedral_group>
+
 ## Number theory
 
 Some results are trivial to understand even for pre high school students.
@@ -264,7 +339,7 @@ Some results are trivial to understand even for pre high school students.
 
 There are tons beautiful prime results and open questions.
 
-#### Eulers' formula for Primes and the Reimann Zeta function
+#### Euler's formula for Primes and the Reimann Zeta function
 
 <https://en.wikipedia.org/wiki/Proof_of_the_Euler_product_formula_for_the_Riemann_zeta_function>
 
@@ -312,14 +387,11 @@ The following questions arise:
 
     Answer in 2013 by Tao: yes for $k$ arbitrarily large, no for infinite $k$.
 
--   if $a$ is fixed, are there infinitely many sequences with fixed length $k$?
-    If there are infinitely many, what is their asymptotic distribution?
+-   if $a$ is fixed, are there infinitely many sequences with fixed length $k$? If there are infinitely many, what is their asymptotic distribution?
 
-    The most simple and elegant case is $a = 2$, $k = 2$, and numbers in those sequences are called twin primes,
-    ex: 39 and 41. As of 2013, both infinity and distribution questions are open.
+    The most simple and elegant case is $a = 2$, $k = 2$, and numbers in those sequences are called twin primes, ex: 39 and 41. As of 2013, both infinity and distribution questions are open.
 
-    As of 2013, for $k = 2$, infinitely many exist for a ~= 5 million, and the bound is going down,
-    so it may be that soon the bound reaches 2, and the infinity of twin primes is proven.
+    As of 2013, for $k = 2$, infinitely many exist for a ~= 5 million, and the bound is going down, so it may be that soon the bound reaches 2, and the infinity of twin primes is proven.
 
 ##### Chen's theorem 1973
 
@@ -361,22 +433,17 @@ Case degree one is Dirichlet's theorem, the only proven degree.
 
 #### Infinity of certain types of primes
 
-For the following types of primes numbers, are there infinitely many,
-and if so what is their asymptotic distribution:
+For the following types of primes numbers, are there infinitely many, and if so what is their asymptotic distribution:
 
--   Well known result from <https://en.wikipedia.org/wiki/Euclid%27s_theorem> from 3 B.C..
-    Involves constructing a new larger prime from the previous ones.
+-   Well known result from <https://en.wikipedia.org/wiki/Euclid%27s_theorem> from 3 B.C.. Involves constructing a new larger prime from the previous ones.
 
-    Implied by many stronger results like
-    <https://en.wikipedia.org/wiki/Divergence_of_the_sum_of_the_reciprocals_of_the_primes>
+    Implied by many stronger results like <https://en.wikipedia.org/wiki/Divergence_of_the_sum_of_the_reciprocals_of_the_primes>
 
 -   [Sophie Germain primes]([https://en.wikipedia.org/wiki/Sophie_Germain_prime)
 
     A prime $p$ such that $2p + 1$ is also a prime.
 
--   arithmetic progressions $a*x + b$ of primes with fixed length $k$,
-    including the well known cases $a = 2, k = 2$ (twin primes)
-    and $a = 2, k = 4$ (prime quadruplet).
+-   arithmetic progressions $a*x + b$ of primes with fixed length $k$, including the well known cases $a = 2, k = 2$ (twin primes) and $a = 2, k = 4$ (prime quadruplet).
 
 -   [Fibonacci primes](https://en.wikipedia.org/wiki/Fibonacci_prime)
 
@@ -385,6 +452,8 @@ and if so what is their asymptotic distribution:
 -   [Friedlander–Iwaniec](https://en.wikipedia.org/wiki/Friedlander%E2%80%93Iwaniec_theorem)
 
     Primes of type: $a^2 + b^4$. Proved in 1997.
+
+-   [Palindromic primes](https://en.wikipedia.org/wiki/Palindromic_prime)
 
 ##### Mersenne primes
 
@@ -402,8 +471,7 @@ If $n$ is composite then $2^n - 1$ is also composite.
 
 As of 2013, only 48 Mersenne primes were known, the largest 10 known primes being Mersenne primes.
 
-Infinity is and distribution are open but conjectured to be true:
-<http://en.wikipedia.org/wiki/Mersenne_conjectures#Lenstra.E2.80.93Pomerance.E2.80.93Wagstaff_conjecture>
+Infinity is and distribution are open but conjectured to be true: <http://en.wikipedia.org/wiki/Mersenne_conjectures#Lenstra.E2.80.93Pomerance.E2.80.93Wagstaff_conjecture>
 
 Only 48 Mersenne primes are known in 2013, amongst them the largest known prime.
 
@@ -421,8 +489,7 @@ Of which $n \in [0,5]$ are prime, and $n \in [6..32]$ were verified not to be pr
 
 It is conjectured that there are only finitely many Fermat primes, possibly only the first five.
 
-Fermat primes also related to <http://en.wikipedia.org/wiki/Constructible_polygon> as shown by Gauss in 1796.
-The non-obvious 17-gon construction it predicts is particularly famous.
+Fermat primes also related to <http://en.wikipedia.org/wiki/Constructible_polygon> as shown by Gauss in 1796. The non-obvious 17-gon construction it predicts is particularly famous.
 
 #### Landau's problems
 
@@ -449,14 +516,11 @@ So immediate and simple to state, but so hard to prove!
 
 Every odd number is a sum of 3 primes.
 
-This is obviously implied by Goldbach's conjecture,
-since if you can generate any even number with two primes,
-then you can just add a third $+ 1$ to reach any odd number.
+This is obviously implied by Goldbach's conjecture, since if you can generate any even number with two primes, then you can just add a third $+ 1$ to reach any odd number.
 
 As of 2013, a proof seems about to come out.
 
-Vinogradof proved in that every odd number larger than an unknown number G can be a sum of 3 primes,
-but did not bound G.
+Vinogradof proved in that every odd number larger than an unknown number G can be a sum of 3 primes, but did not bound G.
 
 Bounds on G started appearing in 1956, but are still too large to attack computationally as of 2013.
 
@@ -482,23 +546,19 @@ $$a + b*i$$
 
 where both $a$ and $b$ are integers.
 
-This set of complex numbers forms a commutative ring, that is,
-a set for which sum $+$ and multiplication $*$ share the same properties of those over $Z$.
+This set of complex numbers forms a commutative ring, that is, a set for which sum $+$ and multiplication $*$ share the same properties of those over $Z$.
 
 Over rings, it is possible to define an analogue of primes known as [prime elements](https://en.wikipedia.org/wiki/Prime_element).
 
 Considering the Gaussian primes, the following interesting problems are still open:
 
--   are there infinitely many Gaussian primes on a line of type $1 + (a*k)$ where $a \in Z$?
-    In particular, $a = 1$ is specially elegant as it is the symmetric diagonal.
+-   are there infinitely many Gaussian primes on a line of type $1 + (a*k)$ where $a \in Z$? In particular, $a = 1$ is specially elegant as it is the symmetric diagonal.
 
 -   [Gaussian moat problem](https://en.wikipedia.org/wiki/Gaussian_moat)
 
-    Is there a sequence $S_i$ with $S_0 = 0$ and $\lim_{i \to \infty} \inf |S_i| = \infty$ for which each element
-    of the sequence is a Gaussian prime, and $|S_{i+1} = S_i| < k$ for a given $k$?
+    Is there a sequence $S_i$ with $S_0 = 0$ and $\lim_{i \to \infty} \inf |S_i| = \infty$ for which each element of the sequence is a Gaussian prime, and $|S_{i+1} = S_i| < k$ for a given $k$?
 
-    For the integers, the answer is always no, since for any $n$, the $n - 1$
-    consecutive numbers n! + 2, n! + 3, ..., n! + n are all composite.
+    For the integers, the answer is always no, since for any $n$, the $n - 1$ consecutive numbers n! + 2, n! + 3, ..., n! + n are all composite.
 
     It has been determined by computational search that for $k = 6$ that the origin is separated from infinity.
 
@@ -528,9 +588,7 @@ For a given $k$:
 
 -   if yes, what the smallest value of $n$? Call that number $g(k)$.
 
--   the same question can be posed for $G(k)$, which is $g(k)$
-    but considering only numbers larger than a fixed arbitrary constant,
-    and is more elegant there
+-   the same question can be posed for $G(k)$, which is $g(k)$ but considering only numbers larger than a fixed arbitrary constant, and is more elegant there
 
 There are also many variants such as using sums of primes, or other subsets of the integers.
 
@@ -561,8 +619,7 @@ For the others there are only bounds.
 
 Case $k = 2$ of Warring's problem.
 
-Fermat's theorem on sums of two squares gives the result only for primes 1 mod 4:
-only 2 squares are need then.
+Fermat's theorem on sums of two squares gives the result only for primes 1 mod 4: only 2 squares are need then.
 
 #### Fermat's theorem on sums of two squares
 
@@ -592,8 +649,7 @@ Variant of Warring's problem for octahedral numbers.
 
 -   every integer is a sum of at most 5 primes.
 
-    The first finite upper bound to the necessary number of primes
-    was by Schnirelmann in 1931, but was around 300,000!
+    The first finite upper bound to the necessary number of primes was by Schnirelmann in 1931, but was around 300,000!
 
 ### Fermat's last theorem
 
@@ -613,7 +669,7 @@ $n = 2$ are the Pythagorean triples. There are infinitely many non-multiple solu
 
 Can be seen as a family of special cases with known solution for Hilbert's tenth problem which is undecidable in general.
 
-### Collatz 3n+1 conjecture 1937
+### Collatz 3n + 1 conjecture 1937
 
 <https://en.wikipedia.org/wiki/Collatz_conjecture#cite_note-KurtzSimon-8>
 
@@ -638,16 +694,14 @@ An absolutely convergent series cannot.
 
 <https://en.wikipedia.org/wiki/Uniform_convergence#To_continuity>
 
-A series of continuous function can converge pointwise to a non continuous function,
-therefore the continuous functions do not form a closed space if pointwise convergence is considered.
+A series of continuous function can converge pointwise to a non continuous function, therefore the continuous functions do not form a closed space if pointwise convergence is considered.
 
 Simple counter examples:
 
 - $x^n$ on $[0,1]$
 - $sin(x)^n$ on $[0,1]$
 
-If uniform convergence is used however, continuous functions converge to continuous functions.
-Uniform convergence can be seen as convergence under the sup norm.
+If uniform convergence is used however, continuous functions converge to continuous functions. Uniform convergence can be seen as convergence under the sup norm.
 
 ### Lebesgue integral
 
@@ -667,13 +721,11 @@ Even Lebesgue integration has limits however, since there are non-measurable set
 
 Construction requires the Axiom of Choice.
 
-[Banach Tarski paradox](http://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox):
-it is possible to double a sphere if we are allowed to cut it into non measurable sets.
+[Banach Tarski paradox](http://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox): it is possible to double a sphere if we are allowed to cut it into non measurable sets.
 
 ### Cantor function
 
-The [Cantor function](http://en.wikipedia.org/wiki/Cantor_function) is a function that is continuous, differentiable,
-increasing, non-constant, and the derivative is zero everywhere except at a set with length zero. 
+The [Cantor function](http://en.wikipedia.org/wiki/Cantor_function) is a function that is continuous, differentiable, increasing, non-constant, and the derivative is zero everywhere except at a set with length zero. 
 
 ### Gamma function
 
@@ -687,8 +739,7 @@ Also has an analytic continuation to the entire complex plane.
 
 <http://en.wikipedia.org/wiki/Cauchy%27s_integral_formula>
 
-Holomorphic functions are incredibly simple as their values
-are determined from the values on the border of a containing disk.
+Holomorphic functions are incredibly simple as their values are determined from the values on the border of a containing disk.
 
 #### Cauchy integral theorem
 
@@ -702,8 +753,7 @@ We can easily detect the number of poles inside any region of a holomorphic func
 
 Cool way to extend functions to larger domains. Simple, ingenious and general.
 
-Basic idea: a real function given by a power series explodes at some point, so I can't continue it...
-well, why not just take its domain to complex values and go around that hole?
+Basic idea: a real function given by a power series explodes at some point, so I can't continue it... well, why not just take its domain to complex values and go around that hole?
 
 Simple example of analytic continuation of $1/(1-z)$: <http://www.mathpages.com/home/kmath649/kmath649.htm>
 
@@ -754,8 +804,7 @@ There are two cases:
 - (topological) manifolds
 - differential manifolds
 
-Questions: are all compact manifolds / differential manifolds homotopic / diffeomorphic
-to the sphere in that dimension?
+Questions: are all compact manifolds / differential manifolds homotopic / diffeomorphic to the sphere in that dimension?
 
 -   for topological manifolds:
 
@@ -771,8 +820,7 @@ to the sphere in that dimension?
 
     Why is low dimension harder than high dimension?? Surprise!
 
-    AKA: classification of compact 3-manifolds. Even simpler than compact 2-manifolds: there is only one,
-    and it is equal to the 3-sphere.
+    AKA: classification of compact 3-manifolds. Even simpler than compact 2-manifolds: there is only one, and it is equal to the 3-sphere.
 
 -   for differential manifolds:
 
@@ -788,6 +836,12 @@ to the sphere in that dimension?
     $n = 4$ is open, there could even be infinitely many.
     Again, why are things more complicated in lower dimensions??
 
-### Sources
+### Bibliography
 
 - <http://mathcs.org/analysis/reals/index.html>
+
+## Combinatorics
+
+<https://en.wikipedia.org/wiki/Ramsey_theory>
+
+If you play Tic Tac Toe in dimension `D` high enough, on a board `n ^ D` with `p` people, there can be no draw.

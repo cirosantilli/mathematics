@@ -1,14 +1,10 @@
 # Algebra
 
-Studies sets which have one or two closed operations attached to them,
-analogous to addition and multiplication.
+Studies sets which have one or two closed operations attached to them, analogous to addition and multiplication.
 
-Furthermore, some properties of addition and multiplication may be removed:
-e.g. we can take addition only without commutativity, which gives a group.
-This is the case for example of matrix multiplication, which is not commutative.
+Furthermore, some properties of addition and multiplication may be removed: e.g. we can take addition only without commutativity, which gives a group. This is the case for example of matrix multiplication, which is not commutative.
 
-When studying algebra, the key is to have an understanding of the inclusion relations
-between the sets being studied, as well a few examples of each set in mind:
+When studying algebra, the key is to have an understanding of the inclusion relations between the sets being studied, as well a few examples of each set in mind:
 
 Single operation (you can call it either sum or multiplication):
 
@@ -20,8 +16,7 @@ Two operations:
 - ring. Sum and non-commutative multiplication. Matrices.
 - field. Rational numbers.
 
-The cool thing about algebra is that starting from those ultra simple definitions,
-super complex to prove theorems and conjectures can be reached.
+The cool thing about algebra is that starting from those ultra simple definitions, super complex to prove theorems and conjectures can be reached.
 
 Types of results include:
 
@@ -31,18 +26,15 @@ Types of results include:
 
 Saying that two structures are isomorphic is the complicated way of saying that they are equal.
 
-More precisely, it means that we can simply change the labels of the points of one structure,
-and we get exactly the second one.
+More precisely, it means that we can simply change the labels of the points of one structure, and we get exactly the second one.
 
-Even more precisely, it means that there is a bijective function
-that keeps the structure's operations.
+Even more precisely, it means that there is a bijective function that keeps the structure's operations.
 
 ## Finite vs Infinite
 
 Many structures have both finite and infinite examples.
 
-Finite classifications are generally much simpler,
-and often infinite classifications don't exist.
+Finite classifications are generally much simpler, and often infinite classifications don't exist.
 
 ## Field
 
@@ -60,8 +52,7 @@ Quadratic closure of $Q$.
 
 Subset of the algebraic numbers.
 
-Consists of all lengths that can be made with straightedge and compass,
-thus helping solve some classical problems from antiquity.
+Consists of all lengths that can be made with straightedge and compass, thus helping solve some classical problems from antiquity.
 
 ##### Quadratic closure
 
@@ -83,8 +74,8 @@ Algebraic closure $Q$.
 
 Every solution of polynomials falls in it.
 
-$R$ is not because of complex roots,
-$C$ is because of the fundamental theorem of algebra.
+- $R$ is not because of complex roots
+- $C$ is because of the fundamental theorem of algebra
 
 A countable example is the field of complex algebraic numbers.
 
@@ -141,3 +132,29 @@ Any field extension of finite dimension over $Q$.
 <http://en.wikipedia.org/wiki/Cyclotomic_field>
 
 Examples: Gaussian and Einstein integers. Then take any root of unity instead.
+
+## Poset
+
+## Partially Ordered Set
+
+Set with a `<=` like relation, but the output of the relation can be either: `true`, `false` or `unrelated`.
+
+Can be represented as a transitively closed DAG, or more commonly as a minimum DAG whose transitive closure is the poset.
+
+Examples:
+
+- power set and inclusion
+- naturals and divisibility
+
+Related concepts:
+
+- <https://en.wikipedia.org/wiki/Transitive_reduction>: remove all unneeded links. Unique. AKA Hasse diagram in the context of poset representation: <https://en.wikipedia.org/wiki/Hasse_diagram>
+- <https://en.wikipedia.org/wiki/Transitive_closure>: add all possible links. Unique.
+
+### Lattice
+
+Poset where every pair of elements has a common ancestor and predecessor.
+
+Naturals with divisibility is a nice non-trivial example.
+
+Non-examples: <http://math.stackexchange.com/questions/112117/simplest-example-of-a-poset-that-is-not-a-lattice>
