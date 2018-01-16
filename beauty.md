@@ -461,7 +461,6 @@ For the following types of primes numbers, are there infinitely many, and if so 
 
 A prime of the form $2^n - 1$.
 
-
 #### Fermat's theorem on sums of two squares
 
 A prime is a sum of two squares iff it is $1 mod 4$.
@@ -679,6 +678,10 @@ If we iterate $f(f(f(f)$, does it always reach 1?
 
 - simple to state, hard to prove
 - low dimension exception for $n = 2$
+
+### ABC
+
+<https://en.wikipedia.org/wiki/Abc_conjecture>
 
 ## Analysis
 
