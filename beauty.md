@@ -50,24 +50,6 @@ There are as many rationals as integers.
 
 Prerequisite from now on: formal proof systems. A proof is a sequence of string manipulations.
 
-### Godel incompleteness
-
-<http://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems>
-
-For every reasonably powerful proof system, with any axioms, there are theorems which cannot be proved. Surprise!!
-
-### Continuum hypothesis
-
-<http://en.wikipedia.org/wiki/Continuum_hypothesis> is independent from ZFC!
-
-Proof via [forcing](#forcing).
-
-### Forcing
-
-<http://en.wikipedia.org/wiki/Forcing_%28mathematics%29>
-
-You can sometimes prove that a specific theorem cannot be proven in a system with given axioms.
-
 ## Geometry
 
 ### Platonic solids
