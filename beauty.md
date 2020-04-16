@@ -1,23 +1,6 @@
 # Beauty
 
 This lists the most beautiful questions in mathematics.
-
-We find it beautiful:
-
--   simple to state and understand (pre-high school, high-school, lower undergrad), but extremely hard to prove.
-
--   surprise: we had intuitive reasons to believe something as possible or not, but a theorem shatters that conviction and brings us on our knees.
-
-    General surprise themes include:
-
-    -   classification of potentially infinite sets like: simple finite groups, compact manifolds, etc.
-
-    -   problems that are more complicated in low dimensions than high like: classification of complex manifolds, classification of regular polytopes.
-
-    -   unpredictable magic constants. Why is the lowest dimension for an exotic sphere 7? Why is 4 the largest degree of an equation with explicit solution?
-
--   applications: make life easier and / or modeling some phenomena well.
-
 Problems are sorted into categories and appear on only one category.
 
 Problems that come from applications such as physics or compute science are acceptable as long as they have a strictly mathematical formulation.
@@ -56,8 +39,6 @@ Prerequisite from now on: formal proof systems. A proof is a sequence of string 
 
 ### Classification of regular polytopes
 
-<http://en.wikipedia.org/wiki/Regular_polytope#Classification_and_description>
-
 Polytope is a general name for N dimensional object which generalize:
 
 - polygons,    the 2D case
@@ -68,40 +49,9 @@ which are objects with planar faces and edges.
 
 Regular polytopes are those with regular facets and vertex figures (the figure you get when you slice off an edge). This implies that the faces and the vertexes look alike, and convexity.
 
-3D regular convex polyhedrons are super famous, have the name "Platonic solid", and have been known since antiquity. In particular, there are only 5 of them. Topological classification is super cool: <https://en.wikipedia.org/wiki/Platonic_solid#Topological_proof>
-
 There are only 4 non-convex regular polyhedrons: <https://en.wikipedia.org/wiki/Kepler%E2%80%93Poinsot_polyhedron>
 
 This prompts us to classify and count them in all dimensions.
-
-The counts are:
-
-| Dimension | Count      |
-|-----------|------------|
-| 2         | $\infty$   |
-| 3         | 5          |
-| 4         | 6          |
-| >4        | 3          |
-
-The cool thing is that the 3 that exist in 5+ dimensions are all of one of the three families:
-
--   <http://en.wikipedia.org/wiki/Simplex>: triangle, tetrahedron.
-
-    Non-regular description: take convex hull take D + 1 vertices that are not on a single D-plane, 
-
--   <http://en.wikipedia.org/wiki/Hypercube>: square, cube. 4D case known as tesseract.
-
-    Convex hull of all $(-1, 1)^D$ (Cartesian product power) D-tuples.
-
-    Two are linked iff they differ by a single number. So each vertex has D neighbors.
-
--   <http://en.wikipedia.org/wiki/Cross-polytope>: square, octahedron.
-
-    All permutations of $(±1, 0, 0, …, 0)$
-
-    Each edge E is linked to every other edge, except it's opposite -E.
-
-the cross polytope and hypercube being dual.
 
 Those three cases also appear on low dimensions (although in $D=2$ the hypercube and cross-polytope coincide), which have some extra ones, which clearly suggests that low dimensions are more complicated in this case.
 
@@ -298,12 +248,6 @@ The cleverness of how to efficiently solve the problems is very beautiful, in sp
 ## Group theory
 
 Prerequisites: definition of group, definition and meaning of a simple group.
-
-### Classification of simple finite groups
-
-<http://en.wikipedia.org/wiki/Classification_of_finite_simple_groups>
-
-How can so much complexity come out from so few rules? How can the proof be so long (thousands of papers)?? Surprise!!
 
 ### Applications to Rubik's cube
 
@@ -818,8 +762,7 @@ Questions: are all compact manifolds / differential manifolds homotopic / diffeo
     | Dimension    | 1 | 2 | 3 | 4 | 5 | 6 | 7  | 8 | 9 | 10 | 11  | 12 | 13 | 14 | 15    | 16 | 17 | 18 | 19     | 20 |
     | Smooth types | 1 | 1 | 1 | ? | 1 | 1 | 28 | 2 | 8 | 6  | 992 | 1  | 3  | 2  | 16256 | 2  | 16 | 16 | 523264 | 24 |
 
-    $n = 4$ is open, there could even be infinitely many.
-    Again, why are things more complicated in lower dimensions??
+    $n = 4$ is open, there could even be infinitely many. Again, why are things more complicated in lower dimensions??
 
 ### Bibliography
 
