@@ -712,58 +712,6 @@ Calculate the Nth digit of many summation constants, including pi, without calcu
 
 Prerequisite: calculus and manifold basics.
 
-### Classification of compact 2-manifolds
-
-Intuitively speaking, they can be sees as the smooth surfaces in N-dimensional space (called an embedding), such that deforming them is allowed. 4-dimensions is enough to embed cover all the cases: 3 is not enough because of the Klein bottle and family.
-
-<http://www.proofwiki.org/wiki/Classification_of_Compact_Two-Manifolds>
-
-So simple!! Either put handles on 2 holes or glue a Mobius strip in a single hole.
-
-You can glue a Mobius strip into a single hole in dimension larger than 3! And it gives you a Klein bottle!
-
-### Classification of compact 3-manifolds
-
-### Generalized Poincare conjectures
-
-<http://en.wikipedia.org/wiki/Generalized_Poincar%C3%A9_conjecture>
-
-There are two cases:
-
-- (topological) manifolds
-- differential manifolds
-
-Questions: are all compact manifolds / differential manifolds homotopic / diffeomorphic to the sphere in that dimension?
-
--   for topological manifolds:
-
-    [Poincare conjecture](https://en.wikipedia.org/wiki/Poincar%C3%A9_conjecture)
-
-    Original problem posed, $n = 3$ for topological manifolds.
-
-    2003 millennium prize problem.
-
-    Last to be proven, only the 4-differential manifold case missing as of 2013.
-
-    Even the truth for all $n > 4$ was proven in the 60's!
-
-    Why is low dimension harder than high dimension?? Surprise!
-
-    AKA: classification of compact 3-manifolds. Even simpler than compact 2-manifolds: there is only one, and it is equal to the 3-sphere.
-
--   for differential manifolds:
-
-    Not true in general. First counter example is $n = 7$. Surprise: what is special about the number 7!?
-
-    Counter examples are called [exotic spheres](http://en.wikipedia.org/wiki/Generalized_Poincar%C3%A9_conjecture)
-
-    Totally unpredictable count table:
-
-    | Dimension    | 1 | 2 | 3 | 4 | 5 | 6 | 7  | 8 | 9 | 10 | 11  | 12 | 13 | 14 | 15    | 16 | 17 | 18 | 19     | 20 |
-    | Smooth types | 1 | 1 | 1 | ? | 1 | 1 | 28 | 2 | 8 | 6  | 992 | 1  | 3  | 2  | 16256 | 2  | 16 | 16 | 523264 | 24 |
-
-    $n = 4$ is open, there could even be infinitely many. Again, why are things more complicated in lower dimensions??
-
 ### Bibliography
 
 - <http://mathcs.org/analysis/reals/index.html>
